@@ -10,4 +10,12 @@ function hoursToMinutes(hours){
     const minutes = hours * 60;
     return minutes;
 }
+
 console.log(hoursToMinutes(2));
+
+// function practice 3
+function areaOfATriangle(base, height){
+    const area = (.5 * base * height);
+    return area;
+}
+console.log(areaOfATriangle(3, 5));
