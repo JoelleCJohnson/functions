@@ -4,3 +4,10 @@ function celsius_to_fahrenheit(degreesCelsius){
 }
 
 console.log(celsius_to_fahrenheit(32) + "\u00B0F");
+
+// Function practice #2 below
+function hoursToMinutes(hours){
+    const minutes = hours * 60;
+    return minutes;
+}
+console.log(hoursToMinutes(2));
