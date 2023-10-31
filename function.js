@@ -56,4 +56,17 @@ function ternaryFizzBuzz(num){
     console.log("no fizzbuzz for you")
 }
 
-ternaryFizzBuzz(15)
+// ternaryFizzBuzz(15)
+
+function palindrome(str){
+    const revStr = str.split("").reverse().join("")
+
+    if(str === revStr){
+        console.log(`The word ${str} is a palindrome`)
+    }
+    else {
+        console.log(`The word ${str} is NOT a palindrome`)
+    }
+}
+
+palindrome('.racecar.')
