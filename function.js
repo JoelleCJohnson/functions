@@ -69,4 +69,21 @@ function palindrome(str){
     }
 }
 
-palindrome('.racecar.')
+// palindrome('racecar')
+
+/*5. Write a function that takes an array of numbers and moves all of the 0s in the array to the beginning of the array then returns the new array.
+Example Input: [4, 0, 2, 0, 1, -3, 5, 0]
+Should Return: [0, 0, 0, 4, 2, 1, -3, 5]*/ 
+
+const array = [4, 0, 2, 0, 1, -3, 5, 0]
+
+function zerosToBeginning(arr){
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === 0){
+            arr.splice(i, 1)
+            arr.unshift(0)
+        }
+    }
+    return arr
+}
+console.log(zerosToBeginning(array))
